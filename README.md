@@ -1,3 +1,5 @@
+> *NB* This package is an updated and slightly modified patch. The original author and repo holder is [Mike McNeil](https://github.com/mikermcneil)
+
 [![HTTP with Node.js/Sails.js](https://camo.githubusercontent.com/9e49073459ed4e0e2687b80eaf515d87b0da4a6b/687474703a2f2f62616c64657264617368792e6769746875622e696f2f7361696c732f696d616765732f6c6f676f2e706e67)](https://sailsjs.com)
 
 # machinepack-http
@@ -6,7 +8,7 @@ Send HTTP requests, scrape webpages, and stream data in your JavaScript/Node.js/
 
 
 > mp-http is focused on immediate productivity with everyday cloud API interactions you're likely to encounter in web, mobile, and IoT apps.  Think of it as a simple, practical utility for simple, everyday cloud API interactions and integration tasks: scenarios where you don't need the flexibility of custom multipart POSTs or support for the HAR spec.
-> 
+>
 > This package is maintained by the Sails.js core team.  Its primary goal is to provide robust, easy-to-use access to the HTTP protocol from Sails.js and Node.js.  Out of the box, it allows for negotiating errors from request failure (i.e. if the user is offline or the server is down) vs. errors from non-2xx status codes (e.g. deliberate server errors), as well as low-level streaming access to the HTTP response.  However this package _is not designed to be a replacement for [`request`](https://npmjs.com/package/request)_.  (In fact, it's just a higher-level wrapper _around_ the `request` module!)
 
 
@@ -58,4 +60,3 @@ MIT &copy; 2015-2017 [Mike McNeil](http://twitter.com/mikermcneil), [Scott Gress
 
 
 [![image_squidhome@2x.png](http://i.imgur.com/RIvu9.png)](https://sailsjs.com)
-

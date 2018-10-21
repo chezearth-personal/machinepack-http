@@ -1,14 +1,12 @@
-'use strict';
-
 var assert = require('assert');
 var path = require('path');
 var SailsApp = require('sails').Sails;
 var Http = require('../');
-var Sails = new SailsApp();
-var app;
 
 describe('machinepack-http: delete', function() {
 
+  var Sails = new SailsApp();
+  var app;
   before(function(done) {
     process.chdir(path.resolve(__dirname, 'fixtures', 'app'));
     Sails.lift({
@@ -22,10 +20,12 @@ describe('machinepack-http: delete', function() {
   });
 
   after(function(done) {
-    app.lower(function(err) {
-      if (err) {return done(err);}
-      setTimeout(done, 500);
-    });
+    if(app) {
+      app.lower(function(err) {
+        if (err) {return done(err);}
+        setTimeout(done, 500);
+      });
+    }
   });
 
   it('should properly encode and send body params AND properly receive and decode response data', function(done) {

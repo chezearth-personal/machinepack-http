@@ -1,3 +1,5 @@
+'use strict';
+
 var assert = require('assert');
 var path = require('path');
 var SailsApp = require('sails').Sails;
@@ -158,5 +160,3 @@ describe('machinepack-http: getStream', function() {
   });
 
 });
-
-

@@ -4,11 +4,11 @@ var assert = require('assert');
 var path = require('path');
 var SailsApp = require('sails').Sails;
 var Http = require('../');
+var Sails = new SailsApp();
+var app;
 
 describe('machinepack-http: delete', function() {
 
-  var Sails = new SailsApp();
-  var app;
   before(function(done) {
     process.chdir(path.resolve(__dirname, 'fixtures', 'app'));
     Sails.lift({
